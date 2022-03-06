@@ -1,0 +1,36 @@
+.tagbar-container {
+    height: 56px;
+    width: 100%;
+    background-color: #202020;
+    position: sticky;
+    top:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #444;
+    z-index: 999;
+}
+
+.tagbar-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 32px;
+}
+
+.tagbar-label {
+    color: whitesmoke;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 18px;
+    border-radius: 300px;
+    background-color:#373737;
+    border: 1px solid #444;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.tagbar-label:hover {
+    background-color: #444;
+}
