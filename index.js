@@ -21,9 +21,9 @@ app.get("/api/video/1", (req, res) => {
 })
 
 
-app.use(express.static(path.join(process.cwd(), "youtube-copy/build")));
+app.use(express.static(path.join(__dirname, "client/build")));
 app.get("*", (req, res) => {
-    res.sendFile(path.join(process.cwd(), "youtube-copy/build/index.html"));
+    res.sendFile(path.join(__dirname, "client/build/index.html"));
 });
 
 
