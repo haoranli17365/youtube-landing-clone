@@ -16,12 +16,12 @@
     .post-container {
         max-width: 280px;
         max-height: 180px;
-        height: auto;
-        width: auto;
+        height: 180px;
+        width: 280px;
         margin-right: 20px;
-        margin-bottom: 42px;
+        margin-bottom: 28px;
         cursor: pointer;
-        padding: 4px 4px 2px 4px;
+        padding: 4px 4px 20px 4px;
         border-radius: 3px;
     }
 }
@@ -55,6 +55,18 @@
 .post-vert:active {
     outline: #797979 solid 1px;
     /* background-color: #797979; */
+}
+
+@media only screen and (max-width: 1440px){
+    .post-vert {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        margin-left: 230px;
+        border-radius: 50%;
+        color: whitesmoke;
+    }
 }
 
 .post-more-button {
