@@ -2,8 +2,7 @@ import React from 'react'
 import './loading.css'
 
 const Loading = () => {
-    const COUNTER = 10
-  return Array(COUNTER).fill(
+  return (
     <div className='loading-container'>
         <div className="loading-img"></div>
         <div className="loading-info">

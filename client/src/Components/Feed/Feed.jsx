@@ -24,11 +24,14 @@ const Feed = () => {
   
   return (
     <div className='feed-container'>
-      {isLoading? <Loading className='loading-container'/> : 
+      {isLoading? 
+      Array.apply(0, Array(10)).map( () => (
+        <Loading className="flex-item" /> 
+      ))
+      : 
       videos.map(v => (
         <Post key={v._id} video={v} />
       ))}
-      
     </div>
   )
 }
