@@ -1,4 +1,5 @@
 .post-container {
+    flex: 2 2 auto;
     max-width: 310px;
     max-height: 400px;
     height: auto;
@@ -8,6 +9,38 @@
     cursor: pointer;
     padding: 4px 4px 2px 4px;
     border-radius: 3px;
+}
+
+@media only screen and (max-width: 1280px){
+    .loading-container {
+        max-width: 360px;
+        max-height: 200px;
+        height: 200px;
+        width: 360px;
+        margin-right: 20px;
+        margin-bottom: 100px;
+        user-select: none;
+        animation: skeleton 1s ease infinite alternate;
+    }
+    @keyframes skeleton {
+        to{
+            opacity: 0.3
+        }
+    }
+}
+
+@media only screen and (max-width: 1280px){
+    .post-container {
+        max-width: 360px;
+        max-height: 200px;
+        height: auto;
+        width: auto;
+        margin-right: 20px;
+        margin-bottom: 28px;
+        cursor: pointer;
+        padding: 4px 4px 2px 4px;
+        border-radius: 3px;
+    }
 }
 
 .post-container:active {

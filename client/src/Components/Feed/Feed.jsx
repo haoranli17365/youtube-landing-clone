@@ -24,7 +24,7 @@ const Feed = () => {
   
   return (
     <div className='feed-container'>
-      {isLoading? <Loading /> : 
+      {isLoading? <Loading className='loading-container'/> : 
       videos.map(v => (
         <Post key={v._id} video={v} />
       ))}
